@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,19 @@
     <title>Batman 2022 - promo</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
     <header class="header">
+        <button class="burger"></button>
+
         <nav class="header__navigation navigation">
-            <ul class="navigtion__list">
+            <button class="navigation__close"></button>
+
+            <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link">
+                    <a class="navigation__link navigation__link_active">
                         Главная
                     </a>
                 </li>
@@ -35,13 +42,13 @@
 
             <ul class="header__social social">
                 <li class="header__item">
-                    <a href="#" class="social__link">fb</a>
+                    <a href="#" class="social__link social__link_fb"></a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="social__link">tw</a>
+                    <a href="#" class="social__link social__link_tw"></a>
                 </li>
                 <li class="header__item">
-                    <a href="#" class="social__link">in</a>
+                    <a href="#" class="social__link social__link_in"></a>
                 </li>
             </ul>
         </nav>
@@ -52,7 +59,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main main__index">
         <img src="images/logo.png" alt="Логотип к фильму Бэтмен" class="logo" width="329" height="235">
     </main>
 
@@ -85,4 +92,5 @@
         </p>
     </footer>
 </body>
+
 </html>
