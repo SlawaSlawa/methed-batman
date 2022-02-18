@@ -70,6 +70,7 @@ p {
   position: relative;
   padding-top: 9px;
   padding-bottom: 9px;
+  height: 50px;
 }
 
 .navigation {
@@ -192,9 +193,10 @@ p {
 
 .main {
   flex-grow: 1;
+  position: relative;
 }
 
-.main__index {
+.main_index {
   background-image: url("../images/photo-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -202,6 +204,10 @@ p {
   display: flex;
   align-items: center;
   padding-left: 180px;
+}
+
+.main_slider {
+  height: calc(100% - 70px - 50px);
 }
 
 .logo {
@@ -222,8 +228,11 @@ p {
   text-transform: uppercase;
   flex-direction: column;
   align-items: center;
+  height: 70px;
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 500;
 }
 
 .footer__list {
@@ -236,4 +245,56 @@ p {
 
 .footer__copyright {
   color: #6a6a6a;
+}
+
+.slider-main {
+  height: 100%;
+}
+
+.slider-main__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 144px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  z-index: 400;
+}
+
+.pagination__arrow {
+  background-color: transparent;
+  border-top: 6px solid #fff;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid transparent;
+
+  display: block;
+  margin: 0 auto 20px;
+  transition: border-color .3s ease;
+  width: 0;
+  height: 0;
+}
+
+.pagination__arrow:hover {
+  border-top-color: #e90000;
+}
+
+.slider-thumbs {
+  max-width: 820px;
+}
+
+.slider-main__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
