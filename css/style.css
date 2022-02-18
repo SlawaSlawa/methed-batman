@@ -83,7 +83,7 @@ p {
   color: #ffffff;
 }
 
-.navigtion__list {
+.navigation__list {
   display: flex;
   text-transform: uppercase;
   margin-right: 14px;
